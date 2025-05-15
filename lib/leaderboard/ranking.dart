@@ -1,19 +1,10 @@
 
 import 'package:flutter/material.dart';
-import 'package:flutter/services.dart';
 
 // I made it stateful considering that the content will change when there is a ranking already
-class Ranking extends StatefulWidget {
+class Ranking extends StatelessWidget {
   const Ranking({super.key});
-  @override
-  State<Ranking> createState() {
-    return _Ranking();
-  }
 
-}
-
-class _Ranking extends State<Ranking> {
-  FocusNode focusNode = FocusNode();
   @override
   Widget build(context) {
     double screenWidth = MediaQuery.of(context).size.width;

@@ -2,17 +2,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 
-class WeightSubmission extends StatefulWidget {
+class WeightSubmission extends StatelessWidget {
   const WeightSubmission({super.key});
-  @override
-  State<WeightSubmission> createState() {
-    return _WeightSubmission();
-  }
 
-}
-
-class _WeightSubmission extends State<WeightSubmission> {
-  FocusNode focusNode = FocusNode();
   @override
   Widget build(context) {
     double screenWidth = MediaQuery.of(context).size.width;
@@ -44,7 +36,6 @@ class _WeightSubmission extends State<WeightSubmission> {
             children: [
               Expanded(
                 child: TextField(
-                  focusNode: focusNode,
                   keyboardType: TextInputType.numberWithOptions(decimal: true),
                   inputFormatters: [
                     FilteringTextInputFormatter.allow(RegExp(r'^\d*\.?\d{0,2}$')),

@@ -1,14 +1,7 @@
 import 'package:flutter/material.dart';
 
-class ProgramBanner extends StatefulWidget {
+class ProgramBanner extends StatelessWidget {
   const ProgramBanner({super.key});
-  @override
-  State<ProgramBanner> createState() {
-    return _ProgramBanner();
-  }
-}
-
-class _ProgramBanner extends State<ProgramBanner> {
   @override
   Widget build(context) {
     final screenWidth = MediaQuery.of(context).size.width;
