@@ -10,7 +10,7 @@ class ProgramDetails extends StatelessWidget {
     return Center(
       child: Column(
         children: [
-          ProgramBanner(),
+          // ProgramBanner(),
           Container(
             width: screenWidth * 0.95,
             margin: EdgeInsets.only(top: 15),
