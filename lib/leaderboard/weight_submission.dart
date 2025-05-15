@@ -46,26 +46,28 @@ class WeightSubmission extends StatelessWidget {
                       fontFamily: 'Gotham Rounded',
                       fontWeight: FontWeight.w500,
                       fontSize: 14,
+                      color: Color(0xFF737C80),
                     ),
                     contentPadding: EdgeInsets.symmetric(vertical: 16.0, horizontal: 20.0),
                     border: OutlineInputBorder(
                       borderRadius: BorderRadius.circular(30.0),
                       borderSide: BorderSide(
-                        color: Color.fromARGB(255, 177, 177, 177),
+                        color: Color(0xFFE6E9EB),
+                        width: 1,
                       ),
                     ),
                     enabledBorder: OutlineInputBorder(
                       borderRadius: BorderRadius.circular(30.0),
                       borderSide: BorderSide(
-                        color: Color.fromARGB(255, 177, 177, 177),
-                        width: 1.5,
+                        color: Color(0xFFE6E9EB),
+                        width: 1,
                       ),
                     ),
                     focusedBorder: OutlineInputBorder(
                       borderRadius: BorderRadius.circular(30.0),
                       borderSide: BorderSide(
-                        color: Color.fromARGB(255, 177, 177, 177),
-                        width: 1.5,
+                        color: Color(0xFFE6E9EB),
+                        width: 1,
                       ),
                     ),
                     filled: true,
@@ -75,8 +77,8 @@ class WeightSubmission extends StatelessWidget {
                       child: Text(
                         'lbs',
                         style: TextStyle(
-                          color: Colors.black87,
-                          fontWeight: FontWeight.bold,
+                          color: Color(0xFF0C1214),
+                          fontWeight: FontWeight.w500,
                           fontSize: 14,
                           fontFamily: 'Gotham Rounded',
                         ),
@@ -121,6 +123,7 @@ class WeightSubmission extends StatelessWidget {
                           style: TextStyle(
                             color: Color(0xFF0C1214),
                             fontWeight: FontWeight.w500,
+                            fontFamily: 'Gotham Rounded',
                           ),
                         ),
                       ],
