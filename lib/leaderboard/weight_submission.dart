@@ -92,26 +92,38 @@ class WeightSubmission extends StatelessWidget {
               SizedBox(
                 width: 100,
                 height: 55,
-                child: ElevatedButton(
-                  onPressed: () {
-                    // handle submit
-                  },
-                  style: ElevatedButton.styleFrom(
-                    backgroundColor: Colors.white,
-                    foregroundColor: Colors.black,
-                    padding: EdgeInsets.symmetric(horizontal: 24, vertical: 14),
-                    shape: RoundedRectangleBorder(
-                      borderRadius: BorderRadius.circular(32),
-                      side: BorderSide(color: Color(0xFF69E48E), width: 1),
+                child: GestureDetector(
+                  onTap: () {},
+                  child: Container(
+                    width: double.infinity,
+                    height: 56,
+                    padding: const EdgeInsets.symmetric(horizontal: 20),
+                    decoration: BoxDecoration(
+                    borderRadius: BorderRadius.circular(56),
+                    color: Color(0xFFFFFFFF),
+                    border: Border.all(color: Color(0xFF69E48E)),
+                    boxShadow: [
+                        BoxShadow(
+                          color: Color(0xFF0C1214).withValues(alpha: 0.8),
+                          offset: Offset(0, 3),
+                          blurRadius: 0,
+                          spreadRadius: 0,
+                        ),
+                      ],
                     ),
-                    elevation: 5,
-                  ),
-                  child: Text(
-                    'Submit',
-                    style: TextStyle(
-                      fontWeight: FontWeight.bold,
-                      fontFamily: 'Gotham Rounded',
-                      fontSize: 14,
+                    child: Row(
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      mainAxisSize: MainAxisSize.min,
+                      children: [
+                        Offstage(),
+                        Text(
+                          'Submit',
+                          style: TextStyle(
+                            color: Color(0xFF0C1214),
+                            fontWeight: FontWeight.w500,
+                          ),
+                        ),
+                      ],
                     ),
                   ),
                 ),
